@@ -78,7 +78,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="h2 fw-bold mb-4 gradient-text">Transforming Ideas Into Digital Solutions</h3>
+            <h3 className="h2 fw-bold mb-4 gradient-text">Transformer les idées en solutions numériques</h3>
             
             <div className="mb-4">
               <p className="lead text-light">

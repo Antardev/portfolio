@@ -268,7 +268,7 @@ const Experience = () => {
                           <i className={`bi ${edu.icon} text-white fs-4`}></i>
                         </div>
                         <div>
-                          <h4 className="h5 fw-bold">{edu.degree}</h4>
+                          <h4 className="h5 fw-bold text-light">{edu.degree}</h4>
                           <p className="text-primary mb-1">
                             <i className="bi bi-building me-1"></i>
                             {edu.school}
@@ -307,7 +307,7 @@ const Experience = () => {
                   <div className="display-1 text-primary mb-4">
                     <i className="bi bi-award"></i>
                   </div>
-                  <h3 className="h2 fw-bold mb-3">Certifications en cours</h3>
+                  <h3 className="h2 fw-bold mb-3 text-light">Certifications en cours</h3>
                   <p className="lead text-light mb-4">
                     Actuellement en préparation des certifications suivantes :
                   </p>
