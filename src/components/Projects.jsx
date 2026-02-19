@@ -1,6 +1,11 @@
 // src/components/Projects.jsx
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import projectImage1 from '../assets/images/MonstagePro.png';
+import projectImage2 from '../assets/images/PrepaTamus.png';
+import projectImage4 from '../assets/images/Portfolio.png';
+
+import projectImage6 from '../assets/images/OptitCredit.png';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -12,18 +17,18 @@ const Projects = () => {
       category: "laravel",
       description: "Application web complète pour la gestion des stages avec Laravel et Vue.js",
       technologies: ["Laravel", "Vue.js", "MySQL", "REST API"],
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
-      link: "#",
-      github: "#"
+      image: projectImage1,
+      link: "https://monstagepro.com/",
+      github: "https://github.com/Antardev/GESDECOFI"
     },
     {
       id: 2,
-      title: "Plateforme E-commerce",
+      title: "Plateforme de TEST",
       category: "laravel",
-      description: "Site e-commerce avec paiement en ligne et gestion d'inventaire",
+      description: "Plateforme de test en ligne avec intégration Stripe pour les paiements",
       technologies: ["Laravel", "Bootstrap", "Stripe", "MySQL"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w-400",
-      link: "#",
+      image: projectImage2,
+      link: "https://prepa-tamus.org/",
       github: "#"
     },
     {
@@ -36,18 +41,32 @@ const Projects = () => {
       link: "#",
       github: "#"
     },
-    {
+
+     {
       id: 4,
-      title: "API REST Sécurisée",
-      category: "api",
-      description: "API REST complète avec authentification JWT et documentation Swagger",
-      technologies: ["Laravel", "JWT", "Swagger", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400",
-      link: "#",
-      github: "#"
+      title: "Portfolio Personnel",
+      category: "frontend",
+      description: "Site portfolio moderne avec animations et design responsive",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Framer Motion", "React", "Vite"],
+      image: projectImage4,
+      link: "https://portfolio-antardev.vercel.app/",
+      github: "https://github.com/Antardev/portfolio"
     },
+   
+    
     {
       id: 5,
+      title: "Site Vitrine Moderne",
+      category: "frontend",
+      description: "Site vitrine responsive avec animations et SEO optimisé",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      image: projectImage6,
+      link: "https://opticredit.site/",
+      github: "#"
+    },
+
+    {
+      id: 6,
       title: "Application Mobile React Native",
       category: "react",
       description: "Application mobile cross-platform pour gestion de tâches",
@@ -55,17 +74,9 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400",
       link: "#",
       github: "#"
-    },
-    {
-      id: 6,
-      title: "Site Vitrine Moderne",
-      category: "frontend",
-      description: "Site vitrine responsive avec animations et SEO optimisé",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
-      link: "#",
-      github: "#"
     }
+
+    
   ];
 
   const filters = [
@@ -129,7 +140,7 @@ const Projects = () => {
                       {project.category}
                     </span>
                   </div>
-                  <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-0 hover-bg-opacity-50 transition-all d-flex align-items-center justify-content-center"
+                  <div className="position-absolute top-0 start-0 w-100 h-100 bg- bg-opacity-0 hover-bg-opacity-50 transition-all d-flex align-items-center justify-content-center"
                        style={{ transition: 'all 0.3s ease' }}>
                     <motion.div 
                       className="opacity-0 hover-opacity-100 transition-all"
@@ -147,7 +158,7 @@ const Projects = () => {
                 </div>
                 
                 <div className="card-body">
-                  <h5 className="card-title fw-bold">{project.title}</h5>
+                  <h5 className="card-title fw-bold text-white">{project.title}</h5>
                   <p className="card-text text-light">{project.description}</p>
                   
                   <div className="mb-3">
