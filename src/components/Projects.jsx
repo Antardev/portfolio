@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import projectImage1 from '../assets/images/MonstagePro.png';
 import projectImage2 from '../assets/images/PrepaTamus.png';
-import projectImage4 from '../assets/images/portfolio.png';
+import projectImage4 from '../assets/images/Folio.png';
 import projectImage6 from '../assets/images/OptitCredit.png';
 
 const Projects = () => {
