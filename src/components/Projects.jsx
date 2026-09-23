@@ -5,6 +5,9 @@ import projectImage1 from '../assets/images/MonstagePro.png';
 import projectImage2 from '../assets/images/PrepaTamus.png';
 import projectImage4 from '../assets/images/Folio.png';
 import projectImage6 from '../assets/images/OptitCredit.png';
+import projectImage7 from '../assets/images/Olori.png';
+import projectImage8 from '../assets/images/BMF.png';
+import projectImage9 from '../assets/images/EVALENS.png';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -28,16 +31,6 @@ const Projects = () => {
       technologies: ["Laravel", "Bootstrap", "Stripe", "MySQL"],
       image: projectImage2,
       link: "https://prepa-tamus.org/",
-      github: "#"
-    },
-    {
-      id: 3,
-      title: "Dashboard Analytique",
-      category: "vue",
-      description: "Tableau de bord en temps réel avec graphiques interactifs",
-      technologies: ["Vue.js", "Chart.js", "Firebase", "API"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
-      link: "#",
       github: "#"
     },
 
@@ -66,13 +59,35 @@ const Projects = () => {
 
     {
       id: 6,
-      title: "Application Mobile React Native",
-      category: "react",
-      description: "Application mobile cross-platform pour gestion de tâches",
-      technologies: ["React Native", "Redux", "Firebase", "Expo"],
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400",
+      title: "Plateforme e-commerce OLORI",
+      category: "laravel",
+      description: "Projet de boutique en ligne développé avec Laravel et Vite. La solution couvre la vitrine, le catalogue, le panier, le tunnel de commande, les avis clients et le back-office administratif.",
+      technologies: ["Laravel", "Vue.js", "MySQL", "Stripe"],
+      image: projectImage7,
       link: "#",
-      github: "#"
+      github: "https://github.com/Antardev/Olori"
+    },
+
+     {
+      id: 7,
+      title: "Billeterie en ligne",
+      category: "laravel",
+      description: "Projet de billetterie en ligne développé avec Laravel et Vite",
+      technologies: ["Laravel", "Vue.js", "MySQL", "Stripe"],
+      image: projectImage8,
+      link: "#",
+      github: "https://github.com/Antardev/BMF"
+    },
+
+     {
+      id: 8,
+      title: "EVALENS - Plateforme d'évaluation en ligne",
+      category: "laravel",
+      description: "ÉvalENS permet à des universités multi-sites de gérer les évaluations anonymes des enseignants par leurs étudiants.",
+      technologies: ["Laravel", "Vue.js", "MySQL", "Stripe"],
+      image: projectImage9,
+      link: "#",
+      github: "https://github.com/Antardev/EvalEns"
     }
 
     

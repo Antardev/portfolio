@@ -28,10 +28,10 @@ const Contact = () => {
     try {
       // Configuration EmailJS (à remplacer avec vos IDs)
       await emailjs.sendForm(
-        'service_id', // Remplacez par votre Service ID
-        'template_id', // Remplacez par votre Template ID
+        'service_id',
+        'template_id', 
         formRef.current,
-        'user_id' // Remplacez par votre User ID
+        'user_id' 
       );
 
       setSubmitStatus('success');
